@@ -1,0 +1,6 @@
+html[data-theme="light"] .bd-header {
+  background-color: hsl(120, 59.8%, 90%) !important;
+}
+html[data-theme="dark"] .bd-header {
+  background-color: hsl(120, 59.8%, 15%) !important;
+}

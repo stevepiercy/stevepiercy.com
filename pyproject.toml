@@ -1,0 +1,57 @@
+[project]
+name = "stevepiercy-com"
+description = "Steve Piercy - Website Builder"
+keywords = [
+    "Steve Piercy - Website Builder",
+    "documentation",
+    "Diátaxis",
+]
+version="0.0.1"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = { file = "LICENSE" }
+maintainers = [
+    { name = "Steve piercy", email = "web@stevepiercy.com" },
+]
+authors = [
+    { name = "Steve piercy", email = "web@stevepiercy.com" },
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+#    "graphviz",
+    "linkify-it-py",
+    "myst-parser",
+    "pydata-sphinx-theme>=0.17.0",
+    "sphinx-autobuild",
+    "sphinx-copybutton",
+    "sphinx-design",
+#    "sphinx-examples",
+    "sphinx-favicon>=1.1.0",
+    "sphinx-notfound-page",
+    "sphinx-reredirects",
+    "sphinx-sitemap",
+    "sphinx-tippy",
+#    "sphinxcontrib-httpdomain",
+#    "sphinxcontrib-httpexample",
+#    "sphinxcontrib-mermaid",
+#    "sphinxcontrib-video",
+#    "sphinxcontrib-youtube",
+    "sphinxext-opengraph",
+    "vale",
+]
+
+[project.urls]
+Repository = "https://github.com/stevepiercy/stevepiercy.com"
+Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"

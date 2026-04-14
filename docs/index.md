@@ -26,17 +26,3 @@ I offer reliable, fast, and secure website and email hosting services.
 Take a look at my projects for examples of what I can do for you.
 
 Let's talk about how I can be of service.
-
-
-
-Built with Markedly Structured Text ({term}`MyST`), this environment supports rich formatting, directives, and extensions tailored for technical documentation.
-
-It's structured following the [Diátaxis](https://diataxis.fr/) documentation framework.
-
-```{toctree}
-:caption: Appendices
-:maxdepth: 2
-:hidden: true
-
-glossary
-```

@@ -165,7 +165,7 @@ html_theme_options = {
         },
         {
             "name": "YouTube",
-            "url": "https://www.youtube.com/@PloneCMS",
+            "url": "https://www.youtube.com/@StevePiercyWeb",
             "icon": "fa-brands fa-youtube",
             "type": "fontawesome",
             "attributes": {

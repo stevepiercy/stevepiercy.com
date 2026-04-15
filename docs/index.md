@@ -26,3 +26,11 @@ I offer reliable, fast, and secure website and email hosting services.
 Take a look at my projects for examples of what I can do for you.
 
 Let's talk about how I can be of service.
+
+```{toctree}
+:caption: Resume
+:maxdepth: 2
+:hidden: true
+
+resume
+```

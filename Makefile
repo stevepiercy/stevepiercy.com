@@ -51,7 +51,7 @@ clean-python: clean
 # documentation builders
 .PHONY: html
 html: .venv/bin/python  ## Build html
-	@uv run sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	@uv run sphinx-build -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
@@ -60,7 +60,7 @@ livehtml: .venv/bin/python  ## Rebuild Sphinx documentation on changes, with liv
 	@uv run sphinx-autobuild \
 		--ignore "*.swp" \
 		--port 8050 \
-		-b html $(DOCS_DIR) "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)
+		-b dirhtml $(DOCS_DIR) "$(BUILDDIR)/html" $(SPHINXOPTS) $(O)
 
 .PHONY: dirhtml
 dirhtml: .venv/bin/python
@@ -94,7 +94,7 @@ rtd-prepare:  ## Prepare environment on Read the Docs
 
 .PHONY: rtd-pr-preview  ## Build pull request previews on Read the Docs
 rtd-pr-preview: rtd-prepare .venv/bin/python ## Build pull request preview on Read the Docs
-	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) ${READTHEDOCS_OUTPUT}/html/
+	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) ${READTHEDOCS_OUTPUT}/html/
 
 .PHONY: build
 build: html  ## Build documentation in HTML format
@@ -134,5 +134,5 @@ vale: .venv/bin/python  ## Run Vale style, grammar, and spell checks
 test: clean vale linkcheckbroken doctest  ## Clean docs build, then run vale, linkcheckbroken, and doctest
 
 .PHONY: all
-all: clean vale linkcheckbroken html  ## Clean docs build, then run linkcheckbroken, and build html
+all: clean vale linkcheckbroken dirhtml  ## Clean docs build, then run linkcheckbroken, and build html
 # /test

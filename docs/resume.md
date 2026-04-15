@@ -11,8 +11,7 @@ myst:
 
 ## Steve Piercy - Website Builder
 
-2165 Tyler Street<br>
-Eugene, OR 97405<br>
+Eugene, Oregon, United States<br>
 email: web@stevepiercy.com<br>
 web: www.stevepiercy.com<br>
 

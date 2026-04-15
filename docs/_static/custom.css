@@ -3,4 +3,13 @@ html[data-theme="light"] .bd-header {
 }
 html[data-theme="dark"] .bd-header {
   background-color: hsl(120, 59.8%, 15%) !important;
+  background: linear-gradient(180deg, hsl(120, 59.8%, 25%) 0%, hsl(120, 59.8%, 15%) 100%) !important;
+}
+html[data-theme="light"] {
+  --pst-color-primary: hsl(188.9, 87.1%, 30.4%);
+  --pst-color-secondary: hsl(194.1, 100%, 26%);
+}
+html[data-theme="dark"] {
+  --pst-color-primary: hsl(194.1, 100%, 75.9%);
+  --pst-color-secondary: hsl(194.1, 100%, 85%);
 }
